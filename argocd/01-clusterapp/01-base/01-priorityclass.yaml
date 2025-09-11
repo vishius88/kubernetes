@@ -21,4 +21,4 @@ metadata:
   name: low-priority
 value: 1000000
 globalDefault: false
-description: "CI|CD components"
+description: "CICD components"
