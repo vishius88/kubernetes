@@ -12,7 +12,7 @@ spec:
   source:
     path: monitoring/charts/ksm
     repoURL: 'https://github.com/vishius88/kubernetes'
-    targetRevision: master
+    targetRevision: main
     helm:
       valueFiles:
         - values.yaml
