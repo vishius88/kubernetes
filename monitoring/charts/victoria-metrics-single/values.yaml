@@ -247,7 +247,7 @@ server:
     # -- Enable deployment of ingress for server component
     enabled: true
     # -- Ingress annotations
-    annotations: {}
+    annotations:
       kubernetes.io/ingress.class: nginx
     #   kubernetes.io/tls-acme: 'true'
 
