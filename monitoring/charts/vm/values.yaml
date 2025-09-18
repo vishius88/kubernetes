@@ -180,7 +180,7 @@ server:
     annotations: {}
 
     # -- StorageClass to use for persistent volume. Requires server.persistentVolume.enabled: true. If defined, PVC created automatically
-    storageClassName: ""
+    storageClassName: "nfs-client"
 
     # -- Existing Claim name. If defined, PVC must be created manually before volume will be bound
     existingClaim: ""
@@ -193,7 +193,7 @@ server:
     # -- Mount subpath
     subPath: ""
     # -- Size of the volume. Should be calculated based on the metrics you send and retention policy you set.
-    size: 16Gi
+    size: 10Gi
 
   # -- Sts/Deploy additional labels
   extraLabels: {}
@@ -245,7 +245,7 @@ server:
     enabled: true
   ingress:
     # -- Enable deployment of ingress for server component
-    enabled: false
+    enabled: true
     # -- Ingress annotations
     annotations: {}
     #   kubernetes.io/ingress.class: nginx
@@ -255,7 +255,7 @@ server:
     extraLabels: {}
     # -- Array of host objects
     hosts:
-      - name: vmsingle.local
+      - name: vmsingle.kubernetes.local
         path:
           - /
         port: http
