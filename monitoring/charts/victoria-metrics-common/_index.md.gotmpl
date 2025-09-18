@@ -1,0 +1,27 @@
+---
+title: VictoriaMetrics Common
+url: /helm/victoria-metrics-common/
+aliases:
+  - /helm/victoriametrics-common/
+tags:
+  - metrics
+  - kubernetes
+  - logs
+# disable rendering of entire section in docs, see https://gohugo.io/content-management/build-options/#not-publishing-a-page
+cascade:
+ - build:
+     list: never
+     publishResources: false
+     render: never
+---
+{{ template "chart.badges" . }}
+
+{{ template "chart.description" . }}
+
+{{ include "chart.helmDocs" . }}
+
+## Parameters
+
+The following table lists the template functions of the chart and description.
+
+{{ template "chart.valuesTableHtml" . }}

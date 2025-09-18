@@ -30,7 +30,11 @@ annotations:
       url: https://docs.victoriametrics.com/victoriametrics/single-server-victoriametrics/
     - name: Changelog
       url: https://docs.victoriametrics.com/victoriametrics/changelog/
+# dependencies:
+#   - name: victoria-metrics-common
+#     version: "0.0.*"
+#     repository: https://victoriametrics.github.io/helm-charts
 dependencies:
   - name: victoria-metrics-common
     version: "0.0.*"
-    repository: https://victoriametrics.github.io/helm-charts
+    repository: "file://../victoria-metrics-common"
