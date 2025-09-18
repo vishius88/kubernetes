@@ -4,7 +4,7 @@ description: Victoriametrics agent
 type: application
 version: 0.25.9
 appVersion: v1.126.0
-dependencies:
-  - name: victoria-metrics-agent
-    version: 0.25.9
-    repository: https://victoriametrics.github.io/helm-charts/
+# dependencies:
+#   - name: victoria-metrics-agent
+#     version: 0.25.9
+#     repository: https://victoriametrics.github.io/helm-charts/
