@@ -245,7 +245,7 @@ server:
     enabled: true
   ingress:
     # -- Enable deployment of ingress for server component
-    enabled: false
+    enabled: true
     # -- Ingress annotations
     annotations: {}
     #   kubernetes.io/ingress.class: nginx
@@ -255,7 +255,7 @@ server:
     extraLabels: {}
     # -- Array of host objects
     hosts:
-      - name: vmsingle.local
+      - name: vmsingle.kubernetes.local
         path:
           - /
         port: http
