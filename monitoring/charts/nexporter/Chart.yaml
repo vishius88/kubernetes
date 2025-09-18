@@ -4,7 +4,7 @@ description: Install kube-state-metrics to generate and expose cluster-level met
 type: application
 version: 4.47.3
 appVersion: 1.9.1
-dependencies:
-  - name: prometheus-node-exporter
-    version: 4.47.3
-    repository: https://prometheus-community.github.io/helm-charts
+# dependencies:
+#   - name: prometheus-node-exporter
+#     version: 4.47.3
+#     repository: https://prometheus-community.github.io/helm-charts
