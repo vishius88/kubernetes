@@ -352,7 +352,8 @@ server:
     # -- Service labels
     labels: {}
     # -- Service ClusterIP
-    clusterIP: "None"
+    ###clusterIP: "None"
+    clusterIP: ""
     # -- Service external IPs. Details are [here](https://kubernetes.io/docs/concepts/services-networking/service/#external-ips)
     externalIPs: []
     # -- Service load balancer IP
