@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vmagent
+  labels:
+    app: monitoringus
+spec:
+  destination:
+    name: ''
+    namespace: monitoringus
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: monitoring/charts/vmagent
+    repoURL: 'https://github.com/vishius88/kubernetes'
+    targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
+  project: monitoringus
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

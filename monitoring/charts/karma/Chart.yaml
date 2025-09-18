@@ -1,0 +1,10 @@
+apiVersion: v2
+name: karma
+description: karma
+type: application
+version: 2.11.0
+appVersion: v0.121
+dependencies:
+  - name: karma
+    version: 2.11.0
+    repository: https://wiremind.github.io/wiremind-helm-charts
