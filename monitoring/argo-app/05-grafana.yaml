@@ -6,9 +6,8 @@ metadata:
     app: monitoringus
 spec:
   destination:
-    name: ''
+    name: in-cluster
     namespace: monitoringus
-    server: 'https://kubernetes.default.svc'
   source:
     path: monitoring/charts/grafana
     repoURL: 'https://github.com/vishius88/kubernetes'
