@@ -9,7 +9,7 @@ spec:
     name: in-cluster
     namespace: monitoringus
   source:
-    path: monitoring/charts/vm
+    path: monitoring/charts/victoria-metrics-single
     repoURL: 'https://github.com/vishius88/kubernetes'
     targetRevision: main
     helm:
