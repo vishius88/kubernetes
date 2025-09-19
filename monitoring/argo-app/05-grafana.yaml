@@ -14,7 +14,7 @@ spec:
     targetRevision: main
     helm:
       valueFiles:
-        - values.yaml
+        - my-values.yaml
   project: monitoringus
   syncPolicy:
     automated: null
