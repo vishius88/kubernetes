@@ -261,7 +261,7 @@ server:
         port: http
 
     # -- Array of TLS objects
-    tls: []
+    tls:
       - secretName: vmsingle-ingress-tls
         hosts:
           - vmsingle.kubernetes.local
