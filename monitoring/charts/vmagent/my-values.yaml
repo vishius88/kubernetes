@@ -35,7 +35,8 @@ daemonSet:
 deployment:
   spec:
     # -- Deployment strategy. Check [here](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy) for details
-    strategy: {}
+    strategy:
+      type: Recreate
      # rollingUpdate:
      #  maxSurge: 25%
      #  maxUnavailable: 25%
