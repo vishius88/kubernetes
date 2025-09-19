@@ -704,7 +704,17 @@ config:
       ## End of COPY
 
 # -- Extra scrape configs that will be appended to `config`
-extraScrapeConfigs: []
+extraScrapeConfigs:
+  - job_name: 'node-exporter'
+    kubernetes_sd_configs:
+      - role: endpoints
+    relabel_configs:
+      - source_labels: [ __meta_kubernetes_endpoints_name ]
+        regex: 'nexporter-prometheus-node-exporter'
+        action: keep
+  - job_name: 'kube-state-metrics'
+    static_configs:
+      - targets: [ 'ksm-kube-state-metrics.monitoringus.svc.cluster.local:8080' ]
 
 probe:
   # -- Readiness probe
